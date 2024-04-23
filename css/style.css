@@ -1,0 +1,104 @@
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Darkgrey: hsl(0, 0%, 12%);
+  --Offblack: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--Darkgrey);
+  font-family: "Inter", sans-serif;
+  color: var(--White);
+  font-size: 14px;
+
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--Grey);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15rem;
+  width: 22rem;
+}
+
+.avatar {
+  width: 5rem;
+  border-radius: 100%;
+  margin: 1rem;
+}
+
+h1 {
+  margin: 0.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  color: var(--Green);
+  font-size: 0.8rem;
+  margin: 0.3rem;
+}
+
+h3 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 1.5rem 0;
+}
+
+.buttom {
+  background-color: var(--Darkgrey);
+  border-radius: 10px;
+  color: var(--White);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 1rem 6rem;
+  text-decoration: none;
+  transition-property: color, background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0.4rem 0 1rem 0;
+  width: 30%;
+}
+
+.buttom:hover,
+.buttom:focus {
+  color: var(--Darkgrey);
+  background-color: var(--Green);
+  font-weight: 800;
+}
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding: 0.5rem;
+  right: 0;
+  left: 0;
+}
+
+.attribution a {
+  color: var(--Green);
+}
