@@ -12,5 +12,8 @@
     "deploy": "npx vercel --prod"
   },
   "author": "Jaime Dargallo",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.2.10"
+  }
 }
