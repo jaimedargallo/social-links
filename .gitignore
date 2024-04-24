@@ -15,7 +15,6 @@
 .DS_Store
 .prettierignore
 *:Zone.Identifier
-./assets
 
 # Dependency directories
 node_modules/
