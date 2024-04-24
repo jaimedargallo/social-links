@@ -17,11 +17,10 @@ html {
 }
 
 body {
-  background-color: var(--Darkgrey);
+  background-color: var(--Offblack);
   font-family: "Inter", sans-serif;
   color: var(--White);
   font-size: 14px;
-
   overflow: hidden;
 }
 
@@ -32,22 +31,24 @@ main {
 }
 
 .card {
-  background-color: var(--Grey);
-  border-radius: 20px;
+  background-color: var(--Darkgrey);
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 15rem;
-  width: 22rem;
+  margin: 10rem;
+  width: 24rem;
+  height: 35rem;
 }
 
 .avatar {
-  width: 5rem;
+  width: 5.5rem;
   border-radius: 100%;
-  margin: 1rem;
+  margin: 2.5rem 0 1rem;
 }
 
 h1 {
+  font-size: 1.5rem;
   margin: 0.5rem;
   font-weight: 600;
 }
@@ -65,20 +66,25 @@ h3 {
 }
 
 .buttom {
-  background-color: var(--Darkgrey);
-  border-radius: 10px;
+  background-color: var(--Grey);
   color: var(--White);
+  transition-property: color, background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.buttom,
+.buttom:hover,
+.buttom:focus {
   font-size: 0.8rem;
   font-weight: 600;
   padding: 1rem 6rem;
   text-decoration: none;
-  transition-property: color, background-color;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
+  border-radius: 10px;
   text-align: center;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin: 0.4rem 0 1rem 0;
+  margin: 0.5rem 0 0.5rem 0;
   width: 30%;
 }
 
@@ -86,7 +92,6 @@ h3 {
 .buttom:focus {
   color: var(--Darkgrey);
   background-color: var(--Green);
-  font-weight: 800;
 }
 
 .attribution {
